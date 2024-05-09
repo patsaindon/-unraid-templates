@@ -16,7 +16,7 @@
     <Project>https://www.blisshq.com/</Project>
     <Overview>Bliss makes your music library more browsable, searchable, playable, and beautiful. It performs the hard work of organizing your music collection, ensuring consistency, correctness, and completeness with minimal effort on your part.</Overview>
     <WebUI>http://[IP]:[PORT:3220]</WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/patsaindon/docker-templates/master/patsaindon/bliss.xml</TemplateURL>
+    <TemplateURL>https://github.com/patsaindon/unraid-templates/blob/main/bliss/bliss.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/patsaindon/docker-templates/master/patsaindon/images/bliss-icon.png</Icon>
     <Date>2024-05-08</Date>
     <Changes></Changes>
