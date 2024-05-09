@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>bliss</Name>
+	<Beta>false</Beta>
+	<Category>CATEGORY: MediaApp:Music</Category>
+    <Repository>patsaindon/bliss</Repository>
+    <Registry>https://registry.hub.docker.com/r/patsaindon/docker-bliss</Registry>
+    <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+    <DonateLink>https://www.paypal.com/donate/?business=NAWZ8LUAXKDPJ&no_recurring=0&currency_code=CAD</DonateLink>
+    <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://forums.unraid.net/topic/THREAD/</Support>
+    <Shell>bash</Shell>
+    <GitHub>https://github.com/patsaindon/bliss</GitHub>
+    <Project>https://www.blisshq.com/</Project>
+    <Overview>Bliss makes your music library more browsable, searchable, playable, and beautiful. It performs the hard work of organizing your music collection, ensuring consistency, correctness, and completeness with minimal effort on your part.</Overview>
+    <WebUI>http://[IP]:[PORT:3220]</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/patsaindon/docker-templates/master/patsaindon/bliss.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/patsaindon/docker-templates/master/patsaindon/images/bliss-icon.png</Icon>
+    <Date>2024-05-08</Date>
+    <Changes></Changes>
+    <Config Name="Port: Web Interface" Target="0000" Default="0000" Mode="tcp" Description="This is the port for the Web UI for the application" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /config" Target="/config" Default="/mnt/user/appdata/blissE" Mode="rw" Description="This is the container path to your configuration files, e.g. databases, configuration files, logs etc." Type="Path" Display="always" Required="true" Mask="false"/>
+	<Config Name="Path: /data" Target="/data" Default="" Mode="rw" Description="This is the container path to your downloaded files or user created content." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="Path: /media" Target="/media" Default="" Mode="rw" Description="This is the container path to your media files, e.g. movies, tv, music, pictures etc." Type="Path" Display="always" Required="false" Mask="false"/>
+    <Config Name="Variable: PUID" Target="PUID" Default="99" Description="User ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: PGID" Target="PGID" Default="100" Description="Group ID for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="Variable: UMASK" Target="UMASK" Default="000" Description="UMASK for the running container" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+</Container>
